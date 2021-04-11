@@ -8,53 +8,49 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+   
 
-  	<title>video</title>
+  	<title>GO-GREEN</title>
  </head>
  <body>
-      <section class="showcase ">
-      	<header>
-      		<h1 class="logo">🌿GO GREEN</h1>
-      		<div class="toggle " ></div>
-      	</header>
-      	 <video src="plant.mp4" muted loop autoplay></video>
-      	 <div class="overlay"></div>
-      	 <div class="text">
-      	 	<h2>Plants Pleasure</h2>
-      	 	<h3>Give life to your home with us</h3>
+      <section class="showcase " id="home">
+        <header>
+          <h1 class="logo">.🌿GO GREEN.</h1>
+          <div class="toggle " ></div>
+        </header>
+         <video src="images/plant.mp4" muted loop autoplay></video>
+         <div class="overlay"></div>
+         <div class="text">
+          <h2>Plants Pleasure</h2>
+          <h3>Give life to your home with us</h3>
+          <p>
+          </p>
+          <a href="#">Shop with us</a>
 
-      	 	<a href="#">Explore</a>
-
-      	 	
-      	 </div>
-
-
-      	 <ul class="social">
-      	 	<li><a href=""><img src="facebook.png"></a></li>
-      	 	<li><a href=""><img src="instagram.png"></a></li>
-
-      	 </ul>
+          
+         </div>
+            	
       </section>
-       <section class="cate">
+       <section class="cate" id="category">
        	<div class="h2">
        		<p>🙟 Categories 🙝</p>
        	</div>
       	 	<div class="home">
 
                 <div class="img1">
-                	<img src="garden.jpg">
+                	<img src="./images/garden.jpg">
                 	<div class="text1">
                 	<a href="#">Garden Plant</a>
                 	</div>
                 </div>
       	 		<div class="img1">
-                	<img src="air.jpg">
+                	<img src="./images/air.jpg">
                 	<div class="text1">
                 		<a href="#">Indoor Plant</a>
                 	</div>
                 </div>
                 <div class="img1">
-                	<img src="indoor.jpg">
+                	<img src="./images/indoor.jpg">
                 	<div class="text1">
                 		<a href="#">Air Plant</a>
                 	</div>
@@ -66,46 +62,140 @@
 
       	 </section>
          
-         <section class="popular">
+         <section class="popular" id="popular">
           <div class="h2">
           <p>🙟 popular products 🙝</p>
         </div>
         
         <div class="category">
            <ul class="list">
-             <li><a class="a1"href="#">sale</a></li>
-             <li><a class="a2" href="#">pot</a></li>
-             <li><a class="a3" href="#">flower</a></li>
+             <li><button class="a1"href="#" onclick="plant(0)">sale</button></li>
+             <li><button class="a2" href="#" onclick="plant(1)">pot</button></li>
+             <li><button class="a3" onclick="plant(2)">flower</button></li>
            </ul>
         </div>
-         <div class="collage">
+       
            <div class="gallery">
                <div class="img">
-                 <img class="i1"src="4.jpg">
+                 <img id="i1"src="./images/plant..jpg">
                </div>
                 
-                <div class="img">
-                 <img class="i2" src="in.jpg">
+                <div class="img2">
+                 <img id="i2" src="./images/in.jpg">
                </div>
-               <div class="img">
-                 <img src="2.png">
+               <div class="img3">
+                 <img  id="i3" src="./images/c3.jpg">
                </div>
-                <div class="img">
-                 <img src="3.jpg">
+               <div class="img4">
+                 <img  id="i4" src="./images/g.jpg">
                </div>
-                <div class="img">
-                 <img src="1.jpg">
+                <div class="img5">
+                 <img  id="i5"src="./images/g2.jpg">
                </div>
-                <div class="img">
-                 <img src="c.jpg">
+                <div class="img6">
+                 <img  id="i6" src="./images/p4.jpg">
+               </div>
+                <div class="img7">
+                 <img id="i7" src="./images/indoor.jpg">
                </div>
           
            </div>
-        </div>
+        
        </center>
+        
          </section>
+          <script>
+      function plant(sw) {
+      var p1;
+      if (sw == 0) {
+        p1 = "./images/plant..jpg"
+        } else if(sw==1)
+        {
+          p1="./images/1.jpg"
+        }
+        else {
+        p1 = "./images/flo2.jpg"
+       }
+     document.getElementById('i1').src = p1;
+      var p2;
+      if (sw == 0) {
+        p2 = "./images/in.jpg"
+        } else if(sw==1)
+        {
+          p2="./images/pot1.jpg"
+        }
+        else {
+        p2 = "./images/g1.jpeg"
+       }
+     document.getElementById('i2').src = p2;
+
+     var p3;
+      if (sw == 0) {
+        p3 = "./images/c3.jpg"
+        } else if(sw==1)
+        {
+          p3="./images/c1.jpg"
+        }
+        else {
+        p3 = "./images/f4.jpeg"
+       }
+     document.getElementById('i3').src = p3;
+    
+     var p4;
+      if (sw == 0) {
+        p4 = "./images/g.jpg"
+        } else if(sw==1)
+        {
+          p4="./images/p3.jpg"
+        }
+        else {
+        p4 = "./images/f11.jpg"
+       }
+     document.getElementById('i4').src = p4;
+    
+     var p5;
+      if (sw == 0) {
+        p5 = "./images/g2.jpg"
+        } else if(sw==1)
+        {
+          p5="./images/p2.jpg"
+        }
+        else {
+        p5 = "./images/f1.jpeg"
+       }
+     document.getElementById('i5').src = p5;
+    
+     var p6;
+      if (sw == 0) {
+        p6 = "./images/p4.jpg"
+        } else if(sw==1)
+        {
+          p6="./images/c4.jpg"
+        }
+        else {
+        p6 = "./images/f3.jpg"
+       }
+
+     document.getElementById('i6').src = p6;
+    
+     var p7;
+      if (sw == 0) {
+        p7 = "./images/indoor.jpg"
+        } else if(sw==1)
+        {
+          p7="./images/2.png"
+        }
+        else {
+        p7 = "./images/f0.jpg"
+       }
+     document.getElementById('i7').src = p7;
+    
+    }
+</script>
+
+<!--popular-->
           
-         <section class="about">
+         <section class="about" id="about">
         
               <div class="h2">
              <p>🙟 About us 🙝</p>
@@ -114,21 +204,21 @@
           
               <div class="column">
                 <div class="card">
-                  <h1 class="ic"><center><img src="leaf.png"></center></h1>
+                  <h1 class="ic"><center><img src="./images/leaf.png"></center></h1>
                     <h2>GO GREEN</h2>
                      <p>We help you decorate your home in more living and healthy way.</p>
                 </div>
               </div>
               <div class="column">
                 <div class="card">
-                  <h1 class="ic"><img src="delivery.png"></h1>
+                  <h1 class="ic"><img src="./images/delivery.png"></h1>
                     <h2>GO GREEN</h2>
                      <p>Fast and Free delivery all over world, 7 days a week.</p>
                 </div>
               </div>
               <div class="column">
                 <div class="card">
-                  <h1 class="ic"><img src="flowers.png"></h1>
+                  <h1 class="ic"><img src="./images/flowers.png"></h1>
                     <h2>GO GREEN</h2>
                      <p>We provide different varities of plants and pots.</p>
                 </div>
@@ -138,7 +228,7 @@
              
          </section>
 
-         <section class="counter">
+         <section class="counter" id="sucess">
 
               <div class="h2">
               <br><br>
@@ -147,21 +237,21 @@
              <div class="row1">
                <div class="column1">
                 <div class="body">
-                 <img src="happy.png">
+                 <img src="./images/happy.png">
                  <p class="counte">1200</p>
                  <p class="ha">happy customer</p>
                </div>
              </div>
                 <div class="column1">
                 <div class="body">
-                 <img src="tree.png">
+                 <img src="./images/tree.png">
                  <p class="counte">2159</p>
                  <p class="ha">plant planted</p>
                </div>
              </div>
                 <div class="column1">
                 <div class="body">
-                 <img src="earth.png">
+                 <img src="./images/earth.png">
                  <p class="counte">96</p>
                  <p class="ha">Global Connection </p>
                </div>
@@ -169,98 +259,62 @@
            </div>
 
          </section>
-<!--testimonial-->
-         <section class="owner">
-          <div class="h2">
-              <br><br>
-             <p >🙟 Happy customer 🙝</p>
-             </div>
-             <!--
-            <section class="testimonials">
-
-
-  <div class="container">
-
-    <div class="slides">
-      <div id="slide-1" class="slide-ctrl"></div>
-      <div id="slide-2" class="slide-ctrl"></div>
-      <div id="slide-3" class="slide-ctrl"></div>
-
-      <figure class="slide">
-        <blockquote class="testimonial">
-          <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus eius eaque enim labore soluta omnis, temporibus error quia, sunt assumenda accusantium quos, culpa.”</p>
-          <cite>RANU VYAS</cite>
-        </blockquote>
-      </figure>
-
-      <figure class="slide">
-        <blockquote class="testimonial">
-          <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quisquam inventore amet minima cupiditate sunt temporibus dolor velit, odio vitae.”</p>
-          <cite>CM VYAS</cite>
-        </blockquote>
-      </figure>
-
-      <figure class="slide">
-        <blockquote class="testimonial">
-          <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sequi, perferendis reprehenderit! Odio id, est.”</p>
-          <cite>ST3LLAX</cite>
-        </blockquote>
-      </figure>
-      
-      <div class="slides-ctrl">
-        <a href="#slide-1" class="slide-btn">RANU VYAS</a>
-        <a href="#slide-2" class="slide-btn">CM VYAS</a>
-        <a href="#slide-3" class="slide-btn">ST3LLAX</a>
-                
+<!--team-->
+<section class="teamm" id="team">
+   
+  <div class="h2">
+  <p>🙟 Our Team 🙝</p></div>
+   <div class="cont">
+    <div class="our-team">
+      <div class="teampic">
+        <img src="images/r.png">
       </div>
-    </div>
-  </div>
-</section>-->
-<div class="containerr">
-        <div class="veiw-box">
-            <div id="testimonials">
-                
-                <div class="user">
-                    <img src="r.png" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
-                    <h3>Ranu Vyas</h3>
-                </div>
-                
-                <div class="user space">
-                    <img src="ranu.png" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
-                    <h3>CmVyas</h3>
-                </div>
-                
-                <div class="user">
-                    <img src="ran.png" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
-                    <h3>St3llax</h3>
-                </div>
-                
-                
-            </div>
-            
-            <div class="controls">
-                <span id="control1"></span>
-                <span id="control2" class="active"></span>
-                <span id="control3"></span>
-            </div>
-            
-        </div>
-    </div>
-    
+      <div class="team-content">
+        <h3 class="title">Ranu Vyas</h3>
+        <span class="post">CEO</span>
+        <p>Lorem ipsum dolor sit. </p>
+      </div>
+      <ul class="sociall">
+        <li><a href="#" class="fab fa-facebook"></a></li>
+        <li><a href="#" class="fab fa-instagram"></a></li>
+        <li><a href="#" class="fab fa-twitter"></a></li>
 
-</section>
+      </ul>
+    </div>
+
+    <div class="our-team">
+      <div class="teampic">
+        <img src="images/ranu.png">
+      </div>
+      <div class="team-content">
+        <h3 class="title">CmVyas</h3>
+        <span class="post">Manager</span>
+         <p>Lorem ipsum dolor sit.</p>
+      </div>
+      <ul class="sociall">
+        <li><a href="#" class="fab fa-facebook"></a></li>
+        <li><a href="#" class="fab fa-instagram"></a></li>
+        <li><a href="#" class="fab fa-twitter"></a></li>
+      </ul>
+    </div>
+
+    <div class="our-team">
+      <div class="teampic">
+        <img src="images/ran.jpg">
+      </div>
+      <div class="team-content">
+        <h3 class="title">St3llax</h3>
+        <span class="post">Developer</span>
+         <p>Lorem ipsum dolor sit.</p>
+      </div>
+      <ul class="sociall">
+        <li><a href="#" class="fab fa-facebook"></a></li>
+        <li><a href="#" class="fab fa-instagram"></a></li>
+        <li><a href="#" class="fab fa-twitter"></a></li>
+      </ul>
+    </div>
+   </div>
+   </section>
 <section class="footer">
 
   <footer class="footerr">
@@ -313,31 +367,27 @@
 
       <div class="menu">
       	<ul>
-      		<li><a href="#">Home</a></li>
-      		<li><a href="#">Categories</a></li>
-      		<li><a href="#">Popular</a></li>
-      		<li><a href="#">About Us</a></li>
-          <li><a href="#">Our Sucess</a></li>
+      	
+      		<li><a href="#category">Categories</a></li>
+      		<li><a href="#popular">Popular</a></li>
+      		<li><a href="#about">About Us</a></li>
+          <li><a href="#sucess">Our Sucess</a></li>
+            <li><a href="#team">Team</a></li>
       	</ul>
        
       </div>
-      <script>
-  $(document).ready(function(){
+
+   
+   
+    <script>
+    $(document).ready(function(){
     $('.counte').counterUp({
       delay: 20,
       time: 1200
     });
   });
   </script>
-      <script >
-      	const menuToggle=document.querySelector('.toggle');
-      	const showcase=document.querySelector('.showcase');
-      	menuToggle.addEventListener('click',()=>
-      	{
-      		menuToggle.classList.toggle('active');
-      		showcase.classList.toggle('active');
-      	})
-      </script>
+     
        <script>
     
         var testimonials = document.getElementById('testimonials');
@@ -372,7 +422,15 @@
         
     
     </script>
-    
+    <script >
+        const menuToggle=document.querySelector('.toggle');
+        const showcase=document.querySelector('.showcase');
+        menuToggle.addEventListener('click',()=>
+        {
+          menuToggle.classList.toggle('active');
+          showcase.classList.toggle('active');
+        })
+      </script>
     
  </body>
  </html>
